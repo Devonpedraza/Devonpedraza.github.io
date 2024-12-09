@@ -1,0 +1,1140 @@
+/* Styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Waterfall&display=swap');
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+}
+
+
+/* NAVBAR */
+.navbar{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+#navbarNav{
+    justify-content: right;
+}
+
+
+.navbar-brand{
+    font-size: 50px;
+    font-family: Waterfall;
+}
+
+.navbar-brand:hover{
+    color: #B3CBB9;
+    transform: scale(1.05);
+}
+
+
+.nav-item{
+    font-size: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+.nav-item a {
+    position: relative;
+}
+
+.nav-item a::after {
+    content: ''; 
+    width: 0; 
+    height: 2px; 
+    background-color: #B3CBB9;
+    position: absolute;
+    bottom: -4px;
+    left: 10px; 
+    transition: width 0.4s ease; /* Smooth transition for the line */
+}
+
+/* final width the line should be at */
+.nav-item a:hover::after,
+.nav-item a.active::after {
+    width: 75%; 
+}
+
+.nav-item:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease;
+}
+
+
+/* Home Page */
+#hero{
+    /* Photo by Alesia Kazantceva on Unsplash */
+    background-image: url(images/alesia-kazantceva-dhD_FiNkuzw-unsplash.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 10%;
+    padding: 0 80px;
+
+    /* Positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+#hero h2{
+    font-size: 65px;
+}
+
+#hero h1 {
+    font-size: 75px;
+    color: #B3CBB9;
+}
+
+/* Animated button example used from W3 Schools */
+.button {
+    position: relative; /* Ensures :after positioning works */
+    border-radius: 4px;
+    background-color: #B3CBB9;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative; 
+    transition: padding-right 0.5s ease; 
+}
+
+.button span:after {
+    content: "»";
+    position: absolute;
+    opacity: 0; 
+    top: 0;
+    right: -20px; 
+    transition: right 0.5s ease, opacity 0.5s ease; 
+}
+
+.button:hover span {
+    padding-right: 25px; /* Moves text */
+}
+
+.button:hover span:after {
+    opacity: 1; 
+    right: 0;
+}
+
+/* Perks of shoping online */
+#perks{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+
+.perk-box{
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 20px 20px 34px  rgba(0, 0, 0, 0.03);
+    margin: 0 auto;
+}
+.perk-box:hover{
+    box-shadow: 5px 5px 45px rgb(179, 203, 185);
+}
+
+.card-body{
+    background-color: #6B717E;
+    opacity: 50%;
+}
+.card-body h6{
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+}
+
+/* Products We are selling */
+.prod-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+#product{
+    text-align: center;
+}
+
+#product .prod {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+    box-shadow: 20px 20px 34px  rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    position: relative;
+    transition: .3s ease;
+}
+
+#product .prod:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 54px rgb(179, 203, 185);
+}
+
+#product .prod img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#product .prod .designer{
+    text-align: start;
+    padding: 10px 0;
+}
+#product .prod .designer span{
+    color: #6B717E;
+    font-size: 12px;
+}
+
+#product .prod .designer h5{
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#product .prod .designer i{
+    font-size: 13px;
+    color: rgb(255, 217, 0);
+}
+
+#product .prod .designer h4{
+    padding-top: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #B3CBB9;
+}
+
+#product .prod a{
+    text-decoration: none;
+}
+#product .prod .cart{
+    text-decoration: none;
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 40px; 
+    height: 40px;
+    line-height: normal; 
+    border-radius: 50%; 
+    background-color: #6B717E;
+    font-size: 18px; 
+    border: 1px solid #B3CBB9;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+#banner {
+    position: relative;
+    color: white;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    z-index: 1; /* Ensures content stays above the background */
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/mojtaba-mosayebzadeh-zDeOHTgnUCY-unsplash.jpg);
+    background-size: cover;
+    background-position: top 40% right 70%;
+    filter: blur(1.75px); /* Adjust the blur intensity */
+    z-index: -1; /* Push background image behind content */
+}
+
+
+#sm-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+#sm-banner .banner-box{
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 580px;
+    height: 50vh;
+    z-index: 1; /* Ensures content stays above the background */
+}
+#sm-banner .banner-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/clarissa-carbungco-9IN2eVU0mf0-unsplash.jpg); /* Photo by Clarissa Carbungco on Unsplashh */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Push background image behind content */
+}
+
+#sm-banner .banner-box-winter{
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 580px;
+    height: 50vh;
+    z-index: 1; /* Ensures content stays above the background */
+}
+#sm-banner .banner-box-winter::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/abdullah-ali-mB4ERgjYUQk-unsplash.jpg); /* Photo by abdullah ali on Unsplash */
+    filter: blur(0.75px);
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Push background image behind content */
+}
+
+#xsm-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#xsm-banner .banner-box{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    height: 50vh;
+    z-index: 1; /* Ensures content stays above the background */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #6B717E;
+    border-radius: 5px;
+}
+
+.sale-banner {
+    background-image: url(images/md-salman-tWOz2_EK5EQ-unsplash.jpg); /* Photo by Md Salman on Unsplash */
+}
+
+.tshirt-banner {
+    background-image: url(images/kawah-kaos-dakwah-_uJjzXcqqAc-unsplash.jpg); /*Photo by kawah kaos dakwah on Unsplash */
+}
+
+.footwear-banner {
+    background-image: url(images/irene-kredenets-dwKiHoqqxk8-unsplash.jpg); /* Photo by Irene Kredenets on Unsplash */
+}
+
+
+
+
+/* Newsletter section */
+#newsletter {
+    margin-top: 100px;
+    padding: 40px 0;
+}
+
+
+#newsletter {
+    margin-top: 100px;
+    padding: 40px 0;
+}
+
+#newsletter .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#newsletter h6 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #B3CBB9;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER SECTION */
+#footer {
+    border-top: 1px solid #6B717E;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+}
+
+#footer h2{
+    text-align: center;
+}
+
+#footer .col{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#footer .social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#footer .social-media-icons li {
+    margin: 0 10px;
+}
+
+#footer .social-media-icons a {
+    font-size: 24px;
+    color: #333;
+}
+
+#footer .nav-link{
+    color: black;
+}
+
+/* Shop Page */
+#shop-banner{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    z-index: 1; 
+
+}
+
+#shop-banner::before{    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/mojtaba-mosayebzadeh-zDeOHTgnUCY-unsplash.jpg);
+    background-size: cover;
+    background-position: top 40% right 70%;
+    filter: blur(1.75px); /* Adjust the blur intensity */
+    z-index: -1; /* Push background image behind content */
+}
+
+
+/* Product Page */
+#solo-product{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+#solo-product .prod-img{
+    margin: 0 auto;
+    width: 40%;
+    margin-right: 40px;
+}
+
+#prod-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 50%;
+}
+
+#prod-info h1,
+#prod-info h4,
+#prod-info p {
+    margin-bottom: 10px;
+}
+
+#prod-info .dropdown {
+    margin-bottom: 15px;
+}
+
+#prod-info label {
+    margin-right: 10px;
+}
+
+#prod-info input[type="text"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+.small-img-group {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.sm-img-col {
+    margin: 0 auto;
+    margin-top: 20px;
+    flex: 1 1 calc(25% - 10px);
+    min-width: calc(25% - 10px);
+    max-width: calc(25% - 10px);
+}
+
+.small-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cart-button {
+    position: relative;
+    border-radius: 4px;
+    background-color: #B3CBB9;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.quantity-cart-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-container label {
+    margin-right: 10px;
+}
+
+#qty {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+.cart-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: padding-right 0.5s ease;
+}
+.cart-button span i {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    transition: right 0.5s ease, opacity 0.5s ease;
+}
+
+.cart-button:hover span {
+    padding-right: 30px;
+}
+
+.cart-button:hover span i {
+    opacity: 1;
+    right: 0;
+}
+
+#prod-info p{
+    line-height: 1.75;
+}
+
+/* Cart Page */
+
+#cart-container .card-body{
+    background-color: transparent;
+}
+
+.coupon-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.coupon-input {
+    flex-grow: 1;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.apply-coupon-btn {
+    padding: 5px 10px;
+    background-color: #B3CBB9;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.apply-coupon-btn:hover {
+    background-color: #9ab8a1;
+}
+
+.cart-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #B3CBB9;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.cart-button:hover {
+    background-color: #9ab8a1;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .prod-container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+/* For tablets and smaller desktops */
+@media screen and (max-width: 1024px) {
+    .prod-container {
+        justify-content: space-around;
+        margin: 0 30px; /* Increase horizontal margin further */
+    }
+
+    .prod {
+        flex-basis: calc(33.333% - 20px);
+    }
+
+    #perks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .perk-box {
+        margin: 10px;
+    }
+    #solo-product {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #solo-product .prod-img {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #prod-info {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* For larger phones and small tablets */
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x:hidden;    
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 20px;
+        background-position: top 30% right 30%;
+    }
+    .prod {
+        flex-basis: calc(33.333% - 20px);
+    }
+
+    #hero h1 {
+        font-size: 38px;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+    }
+
+    .prod-container {
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .prod {
+        flex-basis: calc(50% - 20px);
+        margin: 0 auto;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #banner h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 621px) and (max-width: 768px) {
+    .prod-container {
+        margin: 0 30px; /* Increase horizontal margin further */
+        justify-content: space-between;
+    }
+
+    .prod {
+        flex-basis: calc(50% - 15px); /* Adjust for the new margin */
+        margin-bottom: 20px; /* Add some vertical spacing between rows */
+    }
+    #solo-product .prod-img {
+        width: 90%;
+    }
+
+    #prod-info {
+        width: 90%;
+    }
+
+    .small-img-group {
+        justify-content: center;
+    }
+
+    .sm-img-col {
+        flex: 1 1 calc(50% - 10px);
+        min-width: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    #sm-banner {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    #sm-banner .banner-box,
+    #sm-banner .banner-box-winter {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    
+    #sm-banner h4 {
+        font-size: 16px;
+    }
+    
+    #sm-banner h2 {
+        font-size: 20px;
+    }
+    
+    #sm-banner span {
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 620px) {
+    .prod-container {
+        margin: 0 20px; /* Increase horizontal margin */
+    }
+
+    .prod {
+        flex-basis: calc(50% - 10px); /* Further adjust for the new margin */
+    }
+}
+
+
+
+
+/* For tablets and smaller desktops */
+@media screen and (min-width: 450px) and (max-width: 1008px) {
+    #solo-product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #solo-product .prod-img {
+        width: 80%;
+        max-width: 500px; /* Adjust this value as needed */
+        margin: 0 auto 20px;
+    }
+
+    #prod-info {
+        width: 80%;
+        max-width: 500px; /* Adjust this value as needed */
+        margin: 0 auto;
+    }
+
+    .small-img-group {
+        justify-content: center;
+    }
+}
+
+
+
+
+/* For larger phones and small tablets */
+@media screen and (max-width: 480px) {
+    body{
+        overflow-x:hidden;    
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .prod-container {
+        margin: 0 15px; /* Maintain some margin on very small screens */
+        justify-content: center;
+    }
+
+    .prod {
+        flex-basis: calc(100% - 30px); /* Full width minus margins */
+        max-width: 250px;
+        margin: 0 0 20px 0;
+    }
+
+    #hero {
+        height: 60vh;
+        padding: 0 15px;
+        background-position: 55%;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    #hero h2 {
+        font-size: 26px;
+    }
+
+    #hero h4 {
+        font-size: 14px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .prod-container {
+        justify-content: center;
+    }
+
+    #banner {
+        height: 30vh;
+    }
+
+    #banner h2 {
+        font-size: 20px;
+    }
+
+    #banner h4 {
+        font-size: 14px;
+    }
+    #solo-product .prod-img {
+        width: 100%;
+    }
+
+    #prod-info {
+        width: 100%;
+    }
+
+    .sm-img-col {
+        flex: 1 1 calc(25% - 10px);
+        min-width: calc(25% - 10px);
+        max-width: calc(25% - 10px);
+    }
+
+    .quantity-cart-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quantity-container {
+        margin-bottom: 10px;
+    }
+
+    .cart-button {
+        width: 100%;
+    }
+
+
+    #sm-banner {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    #sm-banner .banner-box,
+    #sm-banner .banner-box-winter {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    
+    #sm-banner h4 {
+        font-size: 16px;
+    }
+    
+    #sm-banner h2 {
+        font-size: 20px;
+    }
+    
+    #sm-banner span {
+        font-size: 14px;
+    }
+}
+    
+
+/* For very small mobile phones */
+@media screen and (max-width: 320px) {
+    body{
+        overflow-x:hidden;
+    }
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero h2 {
+        font-size: 22px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .prod {
+        max-width: 250px;
+    }
+    #prod-info h1 {
+        font-size: 24px;
+    }
+
+    #prod-info h4 {
+        font-size: 18px;
+    }
+
+    #prod-info p {
+        font-size: 14px;
+    }
+
+    #sm-banner {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    #sm-banner .banner-box,
+    #sm-banner .banner-box-winter {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    #sm-banner h4 {
+        font-size: 16px;
+    }
+    
+    #sm-banner h2 {
+        font-size: 20px;
+    }
+    
+    #sm-banner span {
+        font-size: 14px;
+    }
+}
+
+
+/* For larger phones and small tablets */
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x:hidden;    
+    }
+
+    #sm-banner {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    #sm-banner .banner-box,
+    #sm-banner .banner-box-winter {
+        width: 100%;
+        min-width: unset;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 30px 20px;
+    }
+    
+    #sm-banner h4 {
+        font-size: 16px;
+    }
+    
+    #sm-banner h2 {
+        font-size: 20px;
+    }
+    
+    #sm-banner span {
+        font-size: 14px;
+    }
+    #newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    #newsletter button {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+}
+
+/* media queries for better responsiveness for the small banners */
+@media screen and (max-width: 480px) {
+    #sm-banner .banner-box,
+    #sm-banner .banner-box-winter {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    #sm-banner h4 {
+        font-size: 18px;
+    }
+
+    #sm-banner h2 {
+        font-size: 18px;
+    }
+
+    #sm-banner span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #sm-banner .banner-box,
+    #sm-banner .banner-box-winter {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    #sm-banner h4 {
+        font-size: 18px;
+    }
+
+    #sm-banner h2 {
+        font-size: 18px;
+    }
+
+    #sm-banner span {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zentra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Zentra</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="bi bi-bag-dash-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- HERO SECTION FOR THE MAIN PAGE -->
+        <section id="hero">
+            <h4>Exclusive Prices</h4>
+            <h2>Super Value Deals</h2>
+            <h1>On all products</h1>
+            <p>Get more and spend less with our all our offers</p>
+            <button class="button" onclick="location.href='shop.html'"><span>Shop Now</span></button>
+
+        </section>
+
+        <!-- PERK CARDS -->
+        <section id="perks">
+            <div class="card perk-box" style="width: 16rem;">
+                <img src="images/z-TrhLCn1abMU-unsplash.jpg" class="card-img-top" alt="Photo by Z on Unsplash">
+                <div class="card-body">
+                <h6>Free shiping</h6>
+                </div>
+            </div>
+            <div class="card perk-box" style="width: 16rem;">
+                <img src="images/dylan-gillis-xKmXZ4Fv63w-unsplash.jpg" class="card-img-top" alt="Photo by Dylan Gillis Unsplash">
+                <div class="card-body">
+                <h6>Online Orders</h6>
+                </div>
+            </div>
+            <div class="card perk-box" style="width: 16rem;">
+                <img src="images/fabian-blank-pElSkGRA2NU-unsplash.jpg" class="card-img-top" alt="Photo by Fabian Blank on Unsplash">
+                <div class="card-body">
+                <h6>Save Money</h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW ARRIVALS PRODUCT CARDS -->
+        <section id="product">
+            <h1>Featured Products</h1>
+            <p>Shop Our New Winter Collection</p>
+
+            <div class="prod-container">
+                <div class="prod">
+                    <img src="images/24.jpg" alt="">
+                    <div class="designer">
+                        <span>Nike</span>
+                        <h5>White T-shirt</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$35</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="0" data-name="White T-shirt" data-price="35" data-image="images/24.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/mediamodifier-kJXGTOY1wLQ-unsplash.jpg"  alt="Photo by Mediamodifier on Unsplash">
+                    <div class="designer">
+                        <span>Banana Republic</span>
+                        <h5>White Sweater</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$70</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="1" data-name="White Sweater" data-price="70" data-image="images/mediamodifier-kJXGTOY1wLQ-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg" alt="Photo by Ryan Hoffman on Unsplash">
+                    <div class="designer">
+                        <span>Squid Games</span>
+                        <h5>Black Crew Neck</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="2" data-name="Black Crew Neck" data-price="80" data-image="images/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/geoffroy-danest-0fG6zACWGJY-unsplash.jpg" alt="Photo by Geoffroy Danest on Unsplash">
+                    <div class="designer">
+                        <span>Gildan</span>
+                        <h5>Graphic Tee</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$35</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="3" data-name="Graphic Tee" data-price="35" data-image="images/geoffroy-danest-0fG6zACWGJY-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/keagan-henman-XYtuOYfIg_M-unsplash.jpg" alt="Photo by Keagan Henman on Unsplash">
+                    <div class="designer">
+                        <span>Grace Chapel</span>
+                        <h5>Graphic Tee</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$35</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="4" data-name="Graphic Tee" data-price="35" data-image="images/keagan-henman-XYtuOYfIg_M-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/mediamodifier-F5i3PZXYkvY-unsplash.jpg" alt="Photo by Mediamodifier on Unsplash">
+                    <div class="designer">
+                        <span>Banana Republic</span>
+                        <h5>White Polo</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$45</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="5" data-name="White Polo" data-price="45" data-image="images/mediamodifier-F5i3PZXYkvY-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/tian-dayong-maHb1ki_X3o-unsplash.jpg" alt="Photo by tian dayong on Unsplash">
+                    <div class="designer">
+                        <span>Zentra</span>
+                        <h5>Linen Shirt</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$55</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="6" data-name="Linen Shirt" data-price="55" data-image="images/tian-dayong-maHb1ki_X3o-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/tian-dayong-SI7Hmk8MXQU-unsplash.jpg" alt="Photo by tian dayong on Unsplash">
+                    <div class="designer">
+                        <span>Zentra</span>
+                        <h5>Button Down Linen Shirt</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$65</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="7" data-name="Button Down Linen Shirt" data-price="55" data-image="images/tian-dayong-SI7Hmk8MXQU-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROMOTIONAL BANNER -->
+        <section id="banner">
+            <h4>Special Winter Time Deal</h4>
+            <h2>Up to <span>70% Off</span> - On select items </h2>
+            <button class="button" onclick="location.href='shop.html'"><span>Shop Now</span></button>
+        </section>
+
+        <!-- PRODUCT CARDS -->
+        <section id="product">
+            <h1>Featured Products</h1>
+            <p>Shop Our New Winter Collection</p>
+
+            <div class="prod-container">
+                <div class="prod">
+                    <img src="images/tian-dayong-D1B0y5LPCvs-unsplash.jpg" alt="Photo by tian dayong on Unsplash">
+                    <div class="designer">
+                        <span>Zentra</span>
+                        <h5>Linen Vest</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$45</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="8" data-name="Linen Vest" data-price="45" data-image="images/tian-dayong-D1B0y5LPCvs-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/zheng-angela-4_z7Yp2n0Eo-unsplash.jpg" alt="Photo by ZHENG ANGELA on Unsplash">
+                    <div class="designer">
+                        <span>Zentra</span>
+                        <h5>Womens Cropped Shirt</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$45</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="9" data-name="Womens Cropped Shirt" data-price="45" data-image="images/zheng-angela-4_z7Yp2n0Eo-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/milada-vigerova-p8Drpg_duLw-unsplash.jpg" alt="Photo by Milada Vigerova on Unsplash">
+                    <div class="designer">
+                        <span>Zentra</span>
+                        <h5>Crocheted Pancho</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$35</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="10" data-name="Crocheted Pancho" data-price="35" data-image="images/milada-vigerova-p8Drpg_duLw-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg" alt="Photo by Tobias Tullius on Unsplash">
+                    <div class="designer">
+                        <span>Zentra</span>
+                        <h5>Brown Jacket</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$65</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="11" data-name="Brown Jacket" data-price="65" data-image="images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/andres-jasso-u4unYsXQHnE-unsplash.jpg" alt="Photo by Andres Jasso on Unsplash">
+                    <div class="designer">
+                        <span>Nike</span>
+                        <h5>Black and White Airforce One</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$110</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="12" data-name="$Black and White Airforce One" data-price="110" data-image="images/andres-jasso-u4unYsXQHnE-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/erik-mclean-ByjIzFupcHo-unsplash.jpg" alt="Photo by Erik Mclean on Unsplash">
+                    <div class="designer">
+                        <span>Adidas</span>
+                        <h5>Yeezy 350</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$300</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="13" data-name="Yeezy 350" data-price="300" data-image="images/erik-mclean-ByjIzFupcHo-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/wengang-zhai-_fOL6ebfECQ-unsplash.jpg" alt="Photo by Wengang Zhai on Unsplash">
+                    <div class="designer">
+                        <span>Jordan</span>
+                        <h5>Air Jordan 12 Gym Red</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$220</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="14" data-name="Air Jordan 12 Gym Red" data-price="220" data-image="images/wengang-zhai-_fOL6ebfECQ-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+                <div class="prod">
+                    <img src="images/luis-felipe-lins-J2-wAQDckus-unsplash.jpg" alt="Photo by Luis Felipe Lins on Unsplash">
+                    <div class="designer">
+                        <span>Nike</span>
+                        <h5>Airmax</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="15" data-name="Airmax" data-price="120" data-image="images/luis-felipe-lins-J2-wAQDckus-unsplash.jpg">
+                        <i class="bi bi-cart-fill cart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- SMALL BANNER BOXES -->
+        <section id="sm-banner">
+            <div class="banner-box-winter">
+                <h4>Current Winter Selection</h4>
+                <h2>Upcomming Collection</h2>
+                <p>Look at the best up & comming products only at <span style="font-family: WaterFall; font-size: 50px; color: #B3CBB9;">Zentra</span></p>
+                <button class="button" onclick="location.href='shop.html'"><span>Collection</span></button>
+            </div>
+
+            <div class="banner-box">
+                <h4></h4>
+                <h2>Upcomming Collection</h2>
+                <p>Look at the best up & comming products only at <span style="font-family: WaterFall; font-size: 50px; color: #B3CBB9;">Zentra</span></p>
+                <button class="button" onclick="location.href='shop.html'"><span>Collection</span></button>
+            </div>
+        </section>
+
+        <!-- SMALLER BANNER BOXES -->
+        <section id="xsm-banner">
+            <div class="banner-box sale-banner">
+                <h2>Seasonal Sale</h2>
+                <h4>Last summers collection - 65% OFF</h4>
+            </div>
+            <div class="banner-box tshirt-banner">
+                <h2>T-shirts</h2>
+                <h4>Best trendy t-shirts at affordable prices</h4>
+            </div>
+            <div class="banner-box footwear-banner">
+                <h2>Shop New Footwear</h2>
+                <p>Find the best match for your new outfit</p>
+            </div>
+        </section>
+
+
+        <!-- NEWS LETTER SECTION -->
+        <section id="newsletter">
+            <div class="container-fluid">
+                <h6>Sign Up For Newsletters</h6>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <section id="footer">
+            <footer class="py-3 my-3">
+                <h2 style="font-family: Waterfall; font-size: 65px;">Zentra</h2>
+                <div class="row">
+                    <div class="col">
+                        <h4>Contact</h4>
+                        <p><span style="font-size: 18px;">Address: </span>123 Main St, City, State, 12345</p>
+                        <p><span style="font-size: 18px;">Phone: </span>123-456-7890</p>
+                    </div>
+                    <div class="col social">
+                        <h4>Social Media</h4>
+                        <ul class="social-media-icons">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary">Copyright &copy; Zentra 2024</p>
+            </footer>
+        </section>
+        
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
